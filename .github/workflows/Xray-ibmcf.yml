@@ -31,7 +31,6 @@ jobs:
         unzip latest-xray.zip xray geoip.dat geosite.dat
         rm latest-xray.zip
         chmod -v 755 xr*
-        ./xray -version
         mv xray ${APP_NAME}
     - name: Generate Config File (VMess)
       run: |
